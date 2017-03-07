@@ -1,0 +1,12 @@
+<div id="wrapper" style="text-align: center">
+    <div id="yourdiv" style="display: inline-block;">
+      <h3 style="font-family: Consolas,monaco,monospace; ">
+        Products {{name + 'new__'}}
+        <p>{{myWelcome.id}}</p>
+      </h3>
+      <p ng-repeat="i in arr | filter: 3">
+          item - {{i}}
+      </p>
+      <input type="text" ng-model="name" > </input>
+    </div>
+</div>

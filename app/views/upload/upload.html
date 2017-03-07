@@ -1,0 +1,27 @@
+<div ng-show="uploader.isHTML5" >
+    <!-- Example: nv-file-drop="" uploader="{Object}" options="{Object}" filters="{String}" -->
+    <div nv-file-drop="" uploader="uploader"  style="margin:20px;">
+        <div nv-file-over="" ngf-keep="distinct"  nv-file-select="" uploader="uploader" over-class="another-file-over-class" class="well my-drop-zone">
+            <div class="drop-zone-ele">Add Audio/Video files</div>
+            <input type="file" ngf-keep="distinct" nv-file-select uploader="uploader" class="drop-zone-ele" style="opacity:0;" multiple/>
+        </div>
+    </div>
+
+    <div class="col-md-9" style="margin-bottom: 40px;">
+    <h3>Audio Files : {{ uploader.queue.length }} </h3>
+    <table class="table">
+        <tbody>
+            <tr ng-repeat="item in uploader.queue">
+                <td><strong>{{ item.file.name }}</strong>
+                  <wavesurfer-angular url="url" item="item._file" options="options"></wavesurfer-angular>
+                </td>
+                <td ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+                <td nowrap>
+                    <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                        <span class="glyphicon glyphicon-trash"></span> Remove
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

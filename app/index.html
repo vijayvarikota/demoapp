@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>30sec.io</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+  <meta charset="utf-8">
+    <style type="text/css">
+      #mynav {
+        top: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1030;
+        height:40px;
+        color:#aaa;
+        background-color:#222;
+        text-align: center;
+      }
+      .header {
+        top: 0;
+        left: 0;
+        right: 0;
+
+      }
+      div[dropzone] {
+          border: 2px dashed #bbb;
+          border-radius: 5px;
+          padding: 25px;
+          text-align: center;
+          font: 20pt bold;
+          color: #bbb;
+          margin: 10px;
+          margin-bottom: 20px;
+      }
+      .another-file-over-class{
+        background-color: green;
+      }
+
+      .navbar-nav > li > a {
+          padding-top:45px !important;
+          padding-bottom:35px !important;
+          min-width: 40px;
+          margin-right: 20px;
+          color: black;
+          font-size: 18px;}
+      .navbar {min-height:100px !important; border-radius: 0px; background-color: white;}
+
+      .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li > a:focus {
+            background-color: transparent;
+            color: #FFC0CB;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#!/view1">
+              <img src="30sec.png" alt="Dispute Bills">
+            </a>
+          </div>
+        <ul class="nav navbar-nav ">
+          <li><a href="#!/Home">30sec.io</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#!/product">Products</a></li>
+          <li><a href="#!/partner">Partners</a></li>
+          <li><a href="#!/4brand">4brands</a></li>
+          <li><a href="#!/upload">Upload</a></li>
+          <li><a href="#!/home">Logout<span class="caret"></a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+
+
+
+  <div ng-view></div>
+
+
+  <!--
+</body>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <ul class="nav navbar-nav">
+      <li><a href="#!/view1">view1</a></li>
+      <li><a href="#!/view2">view2</a></li>
+      <li><a href="#!/view20">view20</a></li>
+    </ul>
+  </nav>
+
+  <ul class="menu">
+    <li><a href="#!/view1">view1</a></li>
+    <li><a href="#!/view2">view2</a></li>
+    <li><a href="#!/view20">view20</a></li>
+  </ul>
+
+  <div ng-view></div>
+
+  <div>Angular seed app: v<span app-version></span></div> -->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+
+  <script src="views/view1/view1.js"></script>
+  <script src="views/home/home.js"></script>
+  <script src="views/product/product.js"></script>
+  <script src="views/partner/partner.js"></script>
+  <script src="views/4brand/4brand.js"></script>
+  <script src="views/upload/upload.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+
+  <script src="bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
+  <script src="bower_components/wavesurfer.js/dist/wavesurfer.min.js"></script>
+  <!-- js files -->
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/wavesurfer.js/dist/wavesurfer.min.js"></script>
+  <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+
+  <script type="text/javascript" src="wavesurfer-angular.js"></script>
+
+
+
+
+</body>
+</html>
